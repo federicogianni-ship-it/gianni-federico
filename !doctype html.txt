@@ -1,0 +1,1127 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gianni Federico — Cinema e Teatro | Profilo per produzioni</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#111827",
+            muted: "#4b5563",
+            line: "#e5e7eb",
+            paper: "#ffffff",
+            bg: "#fbfbfd",
+            accent: "#0f766e",
+            accent2: "#1f2937",
+            chipbg: "#ecfeff",
+            chipline: "#cffafe",
+          },
+          boxShadow: {
+            soft: "0 1px 0 rgba(17,24,39,.03), 0 12px 30px rgba(2,6,23,.06)",
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @media print{
+      .no-print{ display:none !important; }
+      body{ background:#fff !important; }
+      a{ text-decoration: underline; color:#111827 !important; }
+      .card{ box-shadow:none !important; }
+      .print-pad{ padding: 14px !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-bg text-ink antialiased">
+  <!-- HEADER / HERO -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-emerald-950 via-teal-700 to-sky-800"></div>
+    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_20%_20%,white_0,transparent_40%),radial-gradient(circle_at_80%_30%,white_0,transparent_38%),radial-gradient(circle_at_50%_90%,white_0,transparent_45%)]"></div>
+
+    <div class="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-10 sm:py-12 print-pad">
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-wrap items-end gap-3">
+          <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white">Gianni Federico</h1>
+          <span class="inline-flex items-center rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs text-white/95">
+            <span data-lang="it">Attore · Regista · Drammaturgo</span>
+            <span data-lang="en" class="hidden">Actor · Director · Playwright</span>
+          </span>
+        </div>
+
+        <p class="max-w-3xl text-white/90 leading-relaxed">
+          <span data-lang="it">
+            Profilo sintetico e operativo, pensato per <strong>produzioni cinematografiche e teatrali</strong>:
+            biografia essenziale, crediti principali, lavori in cui figura anche come regista/adattatore e
+            riferimenti verificabili.
+            <span class="ml-2 inline-flex items-center rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs text-white/95">
+              Disambiguazione: non “Giovanni Federico”
+            </span>
+          </span>
+
+          <span data-lang="en" class="hidden">
+            Concise, production-ready profile for <strong>film and theatre productions</strong>:
+            essential bio, key credits, works where he is also credited as director/adaptor, and
+            verifiable references.
+            <span class="ml-2 inline-flex items-center rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs text-white/95">
+              Disambiguation: not “Giovanni Federico”
+            </span>
+          </span>
+        </p>
+
+        <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 text-sm text-white/90">
+          <div>
+            <span data-lang="it">Nato a <strong>Reggio Calabria</strong>, <strong>12 luglio 1963</strong>. Dati e crediti da fonti pubbliche.</span>
+            <span data-lang="en" class="hidden">Born in <strong>Reggio Calabria</strong>, <strong>12 July 1963</strong>. Data and credits from public sources.</span>
+          </div>
+
+          <div class="no-print flex items-center gap-2">
+            <button id="btnPrint"
+              class="inline-flex items-center justify-center rounded-xl bg-white/15 hover:bg-white/20 border border-white/25 px-4 py-2 text-white transition">
+              <span data-lang="it">Stampa / Esporta PDF</span>
+              <span data-lang="en" class="hidden">Print / Export PDF</span>
+            </button>
+            <a href="#fonti"
+              class="inline-flex items-center justify-center rounded-xl bg-white text-emerald-950 hover:bg-white/90 px-4 py-2 font-medium transition">
+              <span data-lang="it">Vai alle fonti</span>
+              <span data-lang="en" class="hidden">Sources</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="no-print text-xs text-white/80">
+          <span data-lang="it">Suggerimento: usa “Stampa” del browser per esportare in PDF.</span>
+          <span data-lang="en" class="hidden">Tip: use your browser “Print” to export as PDF.</span>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV STICKY -->
+  <div class="no-print sticky top-0 z-40 border-b border-line bg-white/85 backdrop-blur">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between gap-3 py-3">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-chipbg border border-chipline text-accent font-semibold">
+            GF
+          </span>
+          <div class="leading-tight">
+            <div class="text-sm font-semibold">
+              <span data-lang="it">Profilo produzione</span>
+              <span data-lang="en" class="hidden">Production profile</span>
+            </div>
+            <div class="text-xs text-muted">Cinema · Teatro · TV</div>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-2 text-sm">
+          <a class="navlink rounded-lg px-3 py-2 hover:bg-gray-50" href="#abstract">
+            <span data-lang="it">In breve</span><span data-lang="en" class="hidden">At a glance</span>
+          </a>
+          <a class="navlink rounded-lg px-3 py-2 hover:bg-gray-50" href="#profilo">
+            <span data-lang="it">Profilo</span><span data-lang="en" class="hidden">Profile</span>
+          </a>
+          <a class="navlink rounded-lg px-3 py-2 hover:bg-gray-50" href="#teatro">
+            <span data-lang="it">Teatro</span><span data-lang="en" class="hidden">Theatre</span>
+          </a>
+          <a class="navlink rounded-lg px-3 py-2 hover:bg-gray-50" href="#cinema">
+            <span data-lang="it">Cinema</span><span data-lang="en" class="hidden">Film</span>
+          </a>
+          <a class="navlink rounded-lg px-3 py-2 hover:bg-gray-50" href="#tv">
+            <span data-lang="it">TV</span><span data-lang="en" class="hidden">TV</span>
+          </a>
+          <a class="navlink rounded-lg px-3 py-2 hover:bg-gray-50" href="#video">
+            <span data-lang="it">Video</span><span data-lang="en" class="hidden">Videos</span>
+          </a>
+          <a class="navlink rounded-lg px-3 py-2 hover:bg-gray-50" href="#fonti">
+            <span data-lang="it">Fonti</span><span data-lang="en" class="hidden">Sources</span>
+          </a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <!-- Switch lingua -->
+          <div class="flex items-center rounded-xl border border-line bg-white p-1">
+            <button id="btnLangIt" class="px-3 py-1.5 text-sm rounded-lg">IT</button>
+            <button id="btnLangEn" class="px-3 py-1.5 text-sm rounded-lg">EN</button>
+          </div>
+
+          <button id="btnContact"
+            class="rounded-xl border border-line bg-white px-3 py-2 text-sm hover:bg-gray-50">
+            <span data-lang="it">Contatti</span><span data-lang="en" class="hidden">Contacts</span>
+          </button>
+
+          <button id="btnTop"
+            class="hidden rounded-xl bg-accent text-white px-3 py-2 text-sm hover:opacity-90">
+            <span data-lang="it">Torna su</span><span data-lang="en" class="hidden">Back to top</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu mobile -->
+      <div class="md:hidden pb-3">
+        <div class="flex flex-wrap gap-2 text-sm">
+          <a class="navlink rounded-lg border border-line px-3 py-2 hover:bg-gray-50" href="#abstract">
+            <span data-lang="it">In breve</span><span data-lang="en" class="hidden">At a glance</span>
+          </a>
+          <a class="navlink rounded-lg border border-line px-3 py-2 hover:bg-gray-50" href="#profilo">
+            <span data-lang="it">Profilo</span><span data-lang="en" class="hidden">Profile</span>
+          </a>
+          <a class="navlink rounded-lg border border-line px-3 py-2 hover:bg-gray-50" href="#teatro">
+            <span data-lang="it">Teatro</span><span data-lang="en" class="hidden">Theatre</span>
+          </a>
+          <a class="navlink rounded-lg border border-line px-3 py-2 hover:bg-gray-50" href="#cinema">
+            <span data-lang="it">Cinema</span><span data-lang="en" class="hidden">Film</span>
+          </a>
+          <a class="navlink rounded-lg border border-line px-3 py-2 hover:bg-gray-50" href="#tv">
+            <span data-lang="it">TV</span><span data-lang="en" class="hidden">TV</span>
+          </a>
+          <a class="navlink rounded-lg border border-line px-3 py-2 hover:bg-gray-50" href="#video">
+            <span data-lang="it">Video</span><span data-lang="en" class="hidden">Videos</span>
+          </a>
+          <a class="navlink rounded-lg border border-line px-3 py-2 hover:bg-gray-50" href="#fonti">
+            <span data-lang="it">Fonti</span><span data-lang="en" class="hidden">Sources</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 pb-14">
+
+    <!-- 1) IN BREVE -->
+    <section id="abstract" class="card bg-paper border border-line rounded-2xl shadow-soft p-5 sm:p-6 mb-4 scroll-mt-28">
+      <h2 class="text-lg font-semibold text-accent2 mb-3">
+        <span data-lang="it">1) In breve</span>
+        <span data-lang="en" class="hidden">1) At a glance</span>
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <div class="lg:col-span-7">
+          <p class="leading-relaxed" data-lang="it">
+            <strong>Gianni Federico</strong> è un attore italiano attivo tra <strong>teatro</strong>, <strong>cinema</strong> e <strong>televisione</strong>,
+            con esperienze anche come <strong>regista</strong>, <strong>drammaturgo</strong>, <strong>sceneggiatore</strong> e
+            (occasionalmente) <strong>direttore del doppiaggio</strong> su film da lui interpretati.
+            <span class="text-sm text-muted">
+              [Source:
+              <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+            </span>
+          </p>
+
+          <p class="leading-relaxed hidden" data-lang="en">
+            <strong>Gianni Federico</strong> is an Italian actor active across <strong>theatre</strong>, <strong>film</strong> and <strong>television</strong>,
+            with experience also as <strong>director</strong>, <strong>playwright</strong>, <strong>screenwriter</strong> and
+            (occasionally) <strong>dubbing director</strong> on films he acted in.
+            <span class="text-sm text-muted">
+              [Source:
+              <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+            </span>
+          </p>
+
+          <div class="flex flex-wrap gap-2 mt-4" aria-label="Aree di attività">
+            <span class="inline-flex items-center rounded-full border border-chipline bg-chipbg px-3 py-1 text-xs text-accent" data-lang="it">
+              Produzioni teatrali (attore / regista / adattatore)
+            </span>
+            <span class="inline-flex items-center rounded-full border border-chipline bg-chipbg px-3 py-1 text-xs text-accent hidden" data-lang="en">
+              Theatre productions (actor / director / adaptor)
+            </span>
+
+            <span class="inline-flex items-center rounded-full border border-chipline bg-chipbg px-3 py-1 text-xs text-accent" data-lang="it">
+              Lungometraggi cinema (interprete)
+            </span>
+            <span class="inline-flex items-center rounded-full border border-chipline bg-chipbg px-3 py-1 text-xs text-accent hidden" data-lang="en">
+              Feature films (cast)
+            </span>
+
+            <span class="inline-flex items-center rounded-full border border-chipline bg-chipbg px-3 py-1 text-xs text-accent" data-lang="it">
+              Serie TV / fiction (interprete)
+            </span>
+            <span class="inline-flex items-center rounded-full border border-chipline bg-chipbg px-3 py-1 text-xs text-accent hidden" data-lang="en">
+              TV series (cast)
+            </span>
+          </div>
+        </div>
+
+        <aside class="lg:col-span-5 border border-line rounded-2xl p-4 sm:p-5 bg-white/70">
+          <h3 class="font-semibold text-accent2 mb-3">
+            <span data-lang="it">Dati essenziali</span>
+            <span data-lang="en" class="hidden">Key details</span>
+          </h3>
+
+          <ul class="list-disc pl-5 space-y-1.5" data-lang="it">
+            <li><strong>Nome:</strong> Gianni Federico</li>
+            <li><strong>Nascita:</strong> Reggio Calabria, 12/07/1963</li>
+            <li><strong>Formazione:</strong> diploma (1990) presso Accademia d’Arte Drammatica della Calabria (Palmi)</li>
+            <li><strong>Ambiti:</strong> teatro, cinema, televisione</li>
+          </ul>
+
+          <ul class="list-disc pl-5 space-y-1.5 hidden" data-lang="en">
+            <li><strong>Name:</strong> Gianni Federico</li>
+            <li><strong>Born:</strong> Reggio Calabria, 12/07/1963</li>
+            <li><strong>Training:</strong> diploma (1990), Accademia d’Arte Drammatica della Calabria (Palmi)</li>
+            <li><strong>Fields:</strong> theatre, film, television</li>
+          </ul>
+
+          <p class="mt-3 text-sm text-muted" data-lang="it">
+            Fonti:
+            <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>,
+            <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi (CV)</a>.
+          </p>
+
+          <p class="mt-3 text-sm text-muted hidden" data-lang="en">
+            Sources:
+            <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>,
+            <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi (CV)</a>.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 2) PROFILO -->
+    <section id="profilo" class="card bg-paper border border-line rounded-2xl shadow-soft p-5 sm:p-6 mb-4 scroll-mt-28">
+      <h2 class="text-lg font-semibold text-accent2 mb-3">
+        <span data-lang="it">2) Profilo e formazione</span>
+        <span data-lang="en" class="hidden">2) Profile & training</span>
+      </h2>
+
+      <p class="leading-relaxed" data-lang="it">
+        Nato a Reggio Calabria, per studio e lavoro trascorre la vita prevalentemente tra <strong>Benevento</strong> e <strong>Roma</strong>.
+        Nel 1990 si diploma all’Accademia d’Arte Drammatica della Calabria.
+        <span class="text-sm text-muted">
+          [Source:
+          <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+          [Source:
+          <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi</a>]
+        </span>
+      </p>
+
+      <p class="leading-relaxed hidden" data-lang="en">
+        Born in Reggio Calabria, for study and work he has lived mainly between <strong>Benevento</strong> and <strong>Rome</strong>.
+        In 1990 he graduated from the Accademia d’Arte Drammatica della Calabria.
+        <span class="text-sm text-muted">
+          [Source:
+          <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+          [Source:
+          <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi</a>]
+        </span>
+      </p>
+    </section>
+
+    <!-- 3) TEATRO -->
+    <section id="teatro" class="card bg-paper border border-line rounded-2xl shadow-soft p-5 sm:p-6 mb-4 scroll-mt-28">
+      <h2 class="text-lg font-semibold text-accent2 mb-3">
+        <span data-lang="it">3) Teatro — produzioni, spettacoli e responsabilità artistiche</span>
+        <span data-lang="en" class="hidden">3) Theatre — productions and artistic roles</span>
+      </h2>
+
+      <p class="leading-relaxed" data-lang="it">
+        Il debutto come attore avviene con <em>I pazzarelli</em> (1988). Nella prima fase di carriera lavora anche in produzioni con
+        interpreti di rilievo (es. Flavio Bucci, Nando Gazzolo, Nino Castelnuovo, Arnoldo Foà) e avvia presto attività di regia e adattamento.
+        <span class="text-sm text-muted">
+          [Source:
+          <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+          [Source:
+          <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi</a>]
+        </span>
+      </p>
+
+      <p class="leading-relaxed hidden" data-lang="en">
+        His stage debut as an actor was <em>I pazzarelli</em> (1988). In the early phase of his career he also worked in productions with
+        prominent performers (e.g., Flavio Bucci, Nando Gazzolo, Nino Castelnuovo, Arnoldo Foà) and soon began directing and adapting works.
+        <span class="text-sm text-muted">
+          [Source:
+          <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+          [Source:
+          <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi</a>]
+        </span>
+      </p>
+
+      <div class="mt-4 border border-line rounded-2xl p-4 sm:p-5 bg-white/70">
+        <h3 class="font-semibold text-accent2 mb-3">
+          <span data-lang="it">Focus: lavori in cui risulta anche regista / autore / adattatore</span>
+          <span data-lang="en" class="hidden">Focus: works also credited as director / author / adaptor</span>
+        </h3>
+
+        <ul class="list-disc pl-5 space-y-1.5" data-lang="it">
+          <li><strong>Il Bosco</strong> (1989) — anche regista e adattatore. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>Storie di amori e soppressate</strong> (2005) — regia. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>I permalosi</strong> (2009) — anche regista e sceneggiatore. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>La farsa l'avanspettacolo e una specie di cabaret</strong> (2014) — anche regista e sceneggiatore. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>A me me piace Grease</strong> (2014) — anche regista e sceneggiatore. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>Il medico volante</strong> (2016) — anche regista e sceneggiatore. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>Mamma tu non esisti</strong> (2018) — regista, traduttore e adattatore (da Martin Giner). <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>Salone di bellezza Wanda</strong> (2020) — regista, traduttore e adattatore (da Adriana Allende). <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+        </ul>
+
+        <ul class="list-disc pl-5 space-y-1.5 hidden" data-lang="en">
+          <li><strong>Il Bosco</strong> (1989) — also director and adaptor. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>Storie di amori e soppressate</strong> (2005) — director. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>I permalosi</strong> (2009) — also director and screenwriter. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>La farsa l'avanspettacolo e una specie di cabaret</strong> (2014) — also director and screenwriter. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>A me me piace Grease</strong> (2014) — also director and screenwriter. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>Il medico volante</strong> (2016) — also director and screenwriter. <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>Mamma tu non esisti</strong> (2018) — director, translator and adaptor (from Martin Giner). <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+          <li><strong>Salone di bellezza Wanda</strong> (2020) — director, translator and adaptor (from Adriana Allende). <span class="text-sm text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></li>
+        </ul>
+      </div>
+
+      <div class="my-6 h-px bg-line"></div>
+
+      <h3 class="font-semibold text-accent2 mb-3">
+        <span data-lang="it">Selezione spettacoli (estratto)</span>
+        <span data-lang="en" class="hidden">Selected stage works (excerpt)</span>
+      </h3>
+
+      <!-- Tabella IT -->
+      <div class="overflow-x-auto rounded-2xl border border-line" data-lang="it">
+        <table class="min-w-[680px] w-full border-collapse bg-white">
+          <thead class="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-600">
+            <tr>
+              <th class="p-3 border-b border-line w-[90px]">Anno</th>
+              <th class="p-3 border-b border-line">Titolo / Note</th>
+              <th class="p-3 border-b border-line w-[210px]">Crediti</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1988</td>
+              <td class="p-3 border-b border-line"><em>I pazzarelli</em> (debutto come attore) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Attore</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1989</td>
+              <td class="p-3 border-b border-line"><em>Empedocle</em> (con Flavio Bucci) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Attore</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1989</td>
+              <td class="p-3 border-b border-line"><em>Il Bosco</em> (testo: David Mamet) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Regia / Adattamento</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1991</td>
+              <td class="p-3 border-b border-line"><em>Il giorno della civetta</em> (con Nando Gazzolo e Nino Castelnuovo) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Attore</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1994</td>
+              <td class="p-3 border-b border-line"><em>Aulularia</em> (con Arnoldo Foà) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Attore</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2005</td>
+              <td class="p-3 border-b border-line"><em>Storie di amori e soppressate</em> <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Regia</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2017</td>
+              <td class="p-3 border-b border-line"><em>Alla faccia vostra</em> (con Debora Caprioglio e Gianfranco Iannuzio) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Attore</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2018</td>
+              <td class="p-3 border-b border-line"><em>Mamma tu non esisti</em> (da “Terapia” di Martin Giner) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Regia / Traduzione / Adattamento</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3">2020</td>
+              <td class="p-3"><em>Salone di bellezza Wanda</em> (da Adriana Allende) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3">Regia / Traduzione / Adattamento</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tabella EN -->
+      <div class="overflow-x-auto rounded-2xl border border-line hidden" data-lang="en">
+        <table class="min-w-[680px] w-full border-collapse bg-white">
+          <thead class="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-600">
+            <tr>
+              <th class="p-3 border-b border-line w-[90px]">Year</th>
+              <th class="p-3 border-b border-line">Title / Notes</th>
+              <th class="p-3 border-b border-line w-[210px]">Credits</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1988</td>
+              <td class="p-3 border-b border-line"><em>I pazzarelli</em> (acting debut) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Actor</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1989</td>
+              <td class="p-3 border-b border-line"><em>Empedocle</em> (with Flavio Bucci) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Actor</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1989</td>
+              <td class="p-3 border-b border-line"><em>Il Bosco</em> (text: David Mamet) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Direction / Adaptation</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1991</td>
+              <td class="p-3 border-b border-line"><em>Il giorno della civetta</em> (with Nando Gazzolo and Nino Castelnuovo) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Actor</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1994</td>
+              <td class="p-3 border-b border-line"><em>Aulularia</em> (with Arnoldo Foà) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Actor</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2005</td>
+              <td class="p-3 border-b border-line"><em>Storie di amori e soppressate</em> <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Director</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2017</td>
+              <td class="p-3 border-b border-line"><em>Alla faccia vostra</em> (with Debora Caprioglio and Gianfranco Iannuzio) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Actor</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2018</td>
+              <td class="p-3 border-b border-line"><em>Mamma tu non esisti</em> (from “Terapia” by Martin Giner) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3 border-b border-line">Direction / Translation / Adaptation</td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50/60">
+              <td class="p-3">2020</td>
+              <td class="p-3"><em>Salone di bellezza Wanda</em> (from Adriana Allende) <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span></td>
+              <td class="p-3">Direction / Translation / Adaptation</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-3 text-sm text-muted" data-lang="it">
+        Nota: per elenchi completi e cronologie estese, vedi le sezioni “Teatro” in
+        <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>
+        e il CV su
+        <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi</a>.
+      </p>
+
+      <p class="mt-3 text-sm text-muted hidden" data-lang="en">
+        Note: for complete lists and extended timelines, see “Theatre” on
+        <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>
+        and the CV on
+        <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi</a>.
+      </p>
+    </section>
+
+    <!-- 4) CINEMA -->
+    <section id="cinema" class="card bg-paper border border-line rounded-2xl shadow-soft p-5 sm:p-6 mb-4 scroll-mt-28">
+      <h2 class="text-lg font-semibold text-accent2 mb-3">
+        <span data-lang="it">4) Cinema — filmografia e titoli chiave</span>
+        <span data-lang="en" class="hidden">4) Film — filmography and key titles</span>
+      </h2>
+
+      <p class="leading-relaxed" data-lang="it">
+        L’esordio nel cinema avviene con <em>Dolce far niente</em> (1997/1998 secondo le fonti), seguito dal primo ruolo da protagonista in
+        <em>Terrarossa</em> (con regia di Giorgio Molteni). Dopo presenze più brevi, torna con un ruolo principale in
+        <em>Il primo Natale</em> (Ficarra e Picone).
+        <span class="text-sm text-muted">
+          [Source:
+          <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+          [Source:
+          <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]
+        </span>
+      </p>
+
+      <p class="leading-relaxed hidden" data-lang="en">
+        His film debut was <em>Dolce far niente</em> (1997/1998 depending on the sources), followed by his first leading role in
+        <em>Terrarossa</em> (directed by Giorgio Molteni). After smaller appearances, he returned with a main role in
+        <em>Il primo Natale</em> (Ficarra & Picone).
+        <span class="text-sm text-muted">
+          [Source:
+          <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+          [Source:
+          <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]
+        </span>
+      </p>
+
+      <!-- Ricerca rapida -->
+      <div class="no-print mt-4 flex flex-col sm:flex-row gap-2 sm:items-center">
+        <label class="text-sm text-muted" for="filmSearch">
+          <span data-lang="it">Cerca nella tabella cinema:</span>
+          <span data-lang="en" class="hidden">Search in film table:</span>
+        </label>
+        <input id="filmSearch" type="text"
+          class="w-full sm:max-w-md rounded-xl border border-line px-4 py-2 outline-none focus:ring-2 focus:ring-accent/30" />
+        <button id="filmReset"
+          class="rounded-xl border border-line bg-white px-4 py-2 text-sm hover:bg-gray-50">
+          <span data-lang="it">Reset</span><span data-lang="en" class="hidden">Reset</span>
+        </button>
+      </div>
+
+      <!-- Tabella IT -->
+      <div class="mt-4 overflow-x-auto rounded-2xl border border-line" data-lang="it">
+        <table class="min-w-[760px] w-full border-collapse bg-white" aria-label="Filmografia cinema (principali titoli)">
+          <thead class="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-600">
+            <tr>
+              <th class="p-3 border-b border-line w-[90px]">Anno</th>
+              <th class="p-3 border-b border-line">Titolo</th>
+              <th class="p-3 border-b border-line">Regia / Note</th>
+            </tr>
+          </thead>
+          <tbody id="filmTbodyIt" class="text-sm">
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1998</td>
+              <td class="p-3 border-b border-line"><em>Dolce far niente</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Nae Caranfil.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                (MyMovies riporta il titolo in filmografia con anno differente).
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1999</td>
+              <td class="p-3 border-b border-line"><em>Terrarossa</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Giorgio Molteni; indicato come primo film da protagonista.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2000</td>
+              <td class="p-3 border-b border-line"><em>Non è giusto</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Antonietta Di Lillo.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2003</td>
+              <td class="p-3 border-b border-line"><em>La lettera</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Luciano Cannito.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2008</td>
+              <td class="p-3 border-b border-line"><em>Grande, grosso e Verdone</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Carlo Verdone.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2009</td>
+              <td class="p-3 border-b border-line"><em>Christine Cristina</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Stefania Sandrelli.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2010</td>
+              <td class="p-3 border-b border-line"><em>Corpo celeste</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Alice Rohrwacher.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2011</td>
+              <td class="p-3 border-b border-line"><em>Romanzo di una strage</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Marco Tullio Giordana.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2012</td>
+              <td class="p-3 border-b border-line"><em>Il comandante e la cicogna</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Silvio Soldini.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2013</td>
+              <td class="p-3 border-b border-line"><em>Bologna 2 agosto</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Giorgio Molteni.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                (in MyMovies: <em>Bologna 2 agosto... I giorni della collera</em>).
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2016</td>
+              <td class="p-3 border-b border-line"><em>Malati di sesso</em></td>
+              <td class="p-3 border-b border-line">
+                Regia: Claudio Cicconetti.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3">2019</td>
+              <td class="p-3"><em>Il primo Natale</em></td>
+              <td class="p-3">
+                Regia: Ficarra e Picone; indicato come ruolo principale nelle fonti.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tabella EN -->
+      <div class="mt-4 overflow-x-auto rounded-2xl border border-line hidden" data-lang="en">
+        <table class="min-w-[760px] w-full border-collapse bg-white" aria-label="Film filmography (key titles)">
+          <thead class="bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-600">
+            <tr>
+              <th class="p-3 border-b border-line w-[90px]">Year</th>
+              <th class="p-3 border-b border-line">Title</th>
+              <th class="p-3 border-b border-line">Director / Notes</th>
+            </tr>
+          </thead>
+          <tbody id="filmTbodyEn" class="text-sm">
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1998</td>
+              <td class="p-3 border-b border-line"><em>Dolce far niente</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Nae Caranfil.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                (MyMovies lists the title with a different year).
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">1999</td>
+              <td class="p-3 border-b border-line"><em>Terrarossa</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Giorgio Molteni; cited as first leading role.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2000</td>
+              <td class="p-3 border-b border-line"><em>Non è giusto</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Antonietta Di Lillo.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2003</td>
+              <td class="p-3 border-b border-line"><em>La lettera</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Luciano Cannito.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2008</td>
+              <td class="p-3 border-b border-line"><em>Grande, grosso e Verdone</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Carlo Verdone.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2009</td>
+              <td class="p-3 border-b border-line"><em>Christine Cristina</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Stefania Sandrelli.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2010</td>
+              <td class="p-3 border-b border-line"><em>Corpo celeste</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Alice Rohrwacher.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2011</td>
+              <td class="p-3 border-b border-line"><em>Romanzo di una strage</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Marco Tullio Giordana.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2012</td>
+              <td class="p-3 border-b border-line"><em>Il comandante e la cicogna</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Silvio Soldini.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2013</td>
+              <td class="p-3 border-b border-line"><em>Bologna 2 agosto</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Giorgio Molteni.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                (MyMovies: <em>Bologna 2 agosto... I giorni della collera</em>).
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3 border-b border-line">2016</td>
+              <td class="p-3 border-b border-line"><em>Malati di sesso</em></td>
+              <td class="p-3 border-b border-line">
+                Director: Claudio Cicconetti.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+            <tr class="filmRow odd:bg-white even:bg-gray-50/60">
+              <td class="p-3">2019</td>
+              <td class="p-3"><em>Il primo Natale</em></td>
+              <td class="p-3">
+                Directors: Ficarra & Picone; cited as a main role by the sources.
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]</span>
+                <span class="text-xs text-muted">[Source: <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-3 text-sm text-muted" data-lang="it">
+        MyMovies riporta una filmografia “interprete” sintetica e ordinabile, utile in ambito casting/produzione:
+        <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">filmografia MyMovies</a>.
+      </p>
+
+      <p class="mt-3 text-sm text-muted hidden" data-lang="en">
+        MyMovies provides a concise, sortable “cast” filmography useful for casting/production:
+        <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies filmography</a>.
+      </p>
+    </section>
+
+    <!-- 5) TV -->
+    <section id="tv" class="card bg-paper border border-line rounded-2xl shadow-soft p-5 sm:p-6 mb-4 scroll-mt-28">
+      <h2 class="text-lg font-semibold text-accent2 mb-3">
+        <span data-lang="it">5) Televisione — contesto (selezione)</span>
+        <span data-lang="en" class="hidden">5) Television — context (selection)</span>
+      </h2>
+
+      <p class="leading-relaxed" data-lang="it">
+        In TV debutta in <em>Il giudice meschino</em> (2013) e compare in diverse serie, inclusa <em>Suburra - La serie</em>.
+        Le fonti riportano inoltre presenze più recenti come <em>Il patriarca</em>, <em>Blanca</em> e <em>Sicilia Express</em>.
+        <span class="text-sm text-muted">
+          [Source:
+          <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+          [Source:
+          <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]
+        </span>
+      </p>
+
+      <p class="leading-relaxed hidden" data-lang="en">
+        On TV he debuted in <em>Il giudice meschino</em> (2013) and appeared in several series, including <em>Suburra - La serie</em>.
+        Sources also list more recent appearances such as <em>Il patriarca</em>, <em>Blanca</em> and <em>Sicilia Express</em>.
+        <span class="text-sm text-muted">
+          [Source:
+          <a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia</a>]
+          [Source:
+          <a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies</a>]
+        </span>
+      </p>
+    </section>
+
+    <!-- 6) VIDEO -->
+    <section id="video" class="card bg-paper border border-line rounded-2xl shadow-soft p-5 sm:p-6 mb-4 scroll-mt-28">
+      <h2 class="text-lg font-semibold text-accent2 mb-3">
+        <span data-lang="it">6) Video disponibili online (riferimenti utili per valutazione artistica)</span>
+        <span data-lang="en" class="hidden">6) Videos available online (useful for evaluation)</span>
+      </h2>
+
+      <ul class="list-disc pl-5 space-y-2" data-lang="it">
+        <li>
+          <a class="text-accent hover:underline" href="https://www.youtube.com/watch?v=DmIl34PQt48" target="_blank" rel="noreferrer">“Mamma tu non esisti”</a>
+          (ripresa/spettacolo – YouTube).
+        </li>
+        <li>
+          <a class="text-accent hover:underline" href="https://www.youtube.com/watch?v=8_1QCW7NmbI" target="_blank" rel="noreferrer">Clip/estratto legato a “Terrarossa”</a>
+          (YouTube).
+        </li>
+      </ul>
+
+      <ul class="list-disc pl-5 space-y-2 hidden" data-lang="en">
+        <li>
+          <a class="text-accent hover:underline" href="https://www.youtube.com/watch?v=DmIl34PQt48" target="_blank" rel="noreferrer">“Mamma tu non esisti”</a>
+          (recording/performance – YouTube).
+        </li>
+        <li>
+          <a class="text-accent hover:underline" href="https://www.youtube.com/watch?v=8_1QCW7NmbI" target="_blank" rel="noreferrer">Clip/excerpt related to “Terrarossa”</a>
+          (YouTube).
+        </li>
+      </ul>
+
+      <p class="mt-3 text-sm text-muted" data-lang="it">
+        Link raccolti da ricerca video; la disponibilità può variare nel tempo.
+      </p>
+      <p class="mt-3 text-sm text-muted hidden" data-lang="en">
+        Links gathered via video search; availability may change over time.
+      </p>
+    </section>
+
+    <!-- 7) FONTI -->
+    <section id="fonti" class="card bg-paper border border-line rounded-2xl shadow-soft p-5 sm:p-6 scroll-mt-28">
+      <h2 class="text-lg font-semibold text-accent2 mb-3">
+        <span data-lang="it">7) Fonti e link</span>
+        <span data-lang="en" class="hidden">7) Sources & links</span>
+      </h2>
+
+      <p class="text-sm text-muted" data-lang="it">
+        Tutte le informazioni riportate sono state derivate dalle fonti sotto (senza aggiunte non verificabili).
+      </p>
+      <p class="text-sm text-muted hidden" data-lang="en">
+        All information shown here is derived from the sources below (no unverified additions).
+      </p>
+
+      <ol class="mt-3 list-decimal pl-5 space-y-2">
+        <li><a class="text-accent hover:underline" href="https://it.wikipedia.org/wiki/Gianni_Federico" target="_blank" rel="noreferrer">Wikipedia — Gianni Federico</a></li>
+        <li><a class="text-accent hover:underline" href="https://www.mymovies.it/persone/gianni-federico/28425/filmografia/" target="_blank" rel="noreferrer">MyMovies — Filmografia di Gianni Federico</a></li>
+        <li><a class="text-accent hover:underline" href="https://www.studiofidemi.it/public_html/gianni-federico/" target="_blank" rel="noreferrer">Studio Fidemi — Curriculum Vitae (Gianni Federico)</a></li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- MODAL CONTATTI (placeholder) -->
+  <div id="contactModal" class="no-print fixed inset-0 hidden items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative w-full max-w-lg rounded-2xl bg-white border border-line shadow-soft p-5">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 class="text-lg font-semibold">
+            <span data-lang="it">Contatti</span>
+            <span data-lang="en" class="hidden">Contacts</span>
+          </h3>
+          <p class="text-sm text-muted mt-1" data-lang="it">
+            Inserisci qui i contatti ufficiali (agenzia/management) quando disponibili.
+          </p>
+          <p class="text-sm text-muted mt-1 hidden" data-lang="en">
+            Add official contacts (agency/management) here when available.
+          </p>
+        </div>
+        <button id="btnCloseModal" class="rounded-xl border border-line px-3 py-2 text-sm hover:bg-gray-50">
+          <span data-lang="it">Chiudi</span><span data-lang="en" class="hidden">Close</span>
+        </button>
+      </div>
+
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div class="rounded-xl border border-line p-4">
+          <div class="text-xs text-muted">
+            <span data-lang="it">Email</span><span data-lang="en" class="hidden">Email</span>
+          </div>
+          <div class="mt-1 font-medium text-ink">—</div>
+        </div>
+        <div class="rounded-xl border border-line p-4">
+          <div class="text-xs text-muted">
+            <span data-lang="it">Telefono</span><span data-lang="en" class="hidden">Phone</span>
+          </div>
+          <div class="mt-1 font-medium text-ink">—</div>
+        </div>
+        <div class="rounded-xl border border-line p-4 sm:col-span-2">
+          <div class="text-xs text-muted">
+            <span data-lang="it">Note</span><span data-lang="en" class="hidden">Notes</span>
+          </div>
+          <div class="mt-1 text-sm text-ink">—</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ---------------------------
+    // Lingua IT/EN (auto-detect + localStorage)
+    // ---------------------------
+    const LANG_KEY = "site_lang";
+    const btnLangIt = document.getElementById("btnLangIt");
+    const btnLangEn = document.getElementById("btnLangEn");
+    const filmSearch = document.getElementById("filmSearch");
+
+    const i18n = {
+      it: {
+        title: "Gianni Federico — Cinema e Teatro | Profilo per produzioni",
+        placeholderFilmSearch: "Es. Terrarossa, Verdone, 2019..."
+      },
+      en: {
+        title: "Gianni Federico — Film & Theatre | Production profile",
+        placeholderFilmSearch: "e.g. Terrarossa, Verdone, 2019..."
+      }
+    };
+
+    let currentLang = (localStorage.getItem(LANG_KEY) || "").trim();
+    if (!currentLang) {
+      const n = (navigator.language || "it").toLowerCase();
+      currentLang = n.startsWith("en") ? "en" : "it";
+    }
+
+    function applyLang(lang) {
+      currentLang = lang;
+      localStorage.setItem(LANG_KEY, lang);
+
+      // html lang + title
+      document.documentElement.lang = lang;
+      document.title = i18n[lang].title;
+
+      // mostra/nascondi blocchi
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        const elLang = el.getAttribute("data-lang");
+        if (!elLang) return;
+        el.classList.toggle("hidden", elLang !== lang);
+      });
+
+      // switch UI
+      const activeClasses = ["bg-accent","text-white"];
+      const inactiveClasses = ["text-ink","hover:bg-gray-50"];
+
+      [btnLangIt, btnLangEn].forEach(b => {
+        b.classList.remove(...activeClasses);
+        b.classList.remove(...inactiveClasses);
+        b.classList.add(...inactiveClasses);
+      });
+
+      const activeBtn = lang === "it" ? btnLangIt : btnLangEn;
+      activeBtn.classList.add(...activeClasses);
+      activeBtn.classList.remove(...inactiveClasses);
+
+      // placeholder ricerca
+      filmSearch.placeholder = i18n[lang].placeholderFilmSearch;
+
+      // reset filtro per evitare "righe nascoste" cambiando lingua
+      filmSearch.value = "";
+      applyFilmFilter();
+    }
+
+    btnLangIt.addEventListener("click", () => applyLang("it"));
+    btnLangEn.addEventListener("click", () => applyLang("en"));
+
+    // ---------------------------
+    // Smooth scroll + active section
+    // ---------------------------
+    const navLinks = Array.from(document.querySelectorAll(".navlink"));
+    const sections = navLinks
+      .map(a => document.querySelector(a.getAttribute("href")))
+      .filter(Boolean);
+
+    navLinks.forEach(a => {
+      a.addEventListener("click", (e) => {
+        const id = a.getAttribute("href");
+        const el = document.querySelector(id);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        history.pushState(null, "", id);
+      });
+    });
+
+    const setActive = (id) => {
+      navLinks.forEach(a => {
+        const isActive = a.getAttribute("href") === id;
+        a.classList.toggle("bg-gray-50", isActive);
+        a.classList.toggle("font-medium", isActive);
+        a.classList.toggle("text-ink", isActive);
+      });
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter(e => e.isIntersecting)
+        .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible) setActive("#" + visible.target.id);
+    }, { rootMargin: "-30% 0px -60% 0px", threshold: [0.1, 0.2, 0.4, 0.6] });
+
+    sections.forEach(s => observer.observe(s));
+
+    // ---------------------------
+    // Print
+    // ---------------------------
+    document.getElementById("btnPrint")?.addEventListener("click", () => window.print());
+
+    // ---------------------------
+    // Back to top
+    // ---------------------------
+    const btnTop = document.getElementById("btnTop");
+    const toggleTop = () => {
+      const show = window.scrollY > 500;
+      btnTop.classList.toggle("hidden", !show);
+    };
+    window.addEventListener("scroll", toggleTop, { passive:true });
+    toggleTop();
+
+    btnTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      history.pushState(null, "", "#");
+    });
+
+    // ---------------------------
+    // Modal contatti
+    // ---------------------------
+    const modal = document.getElementById("contactModal");
+    const openModal = () => {
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      document.body.classList.add("overflow-hidden");
+    };
+    const closeModal = () => {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      document.body.classList.remove("overflow-hidden");
+    };
+
+    document.getElementById("btnContact")?.addEventListener("click", openModal);
+    document.getElementById("btnCloseModal")?.addEventListener("click", closeModal);
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+      if (e.target.classList.contains("bg-black/40")) closeModal();
+    });
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
+    });
+
+    // ---------------------------
+    // Ricerca tabella Cinema (sulla lingua attiva)
+    // ---------------------------
+    const resetBtn = document.getElementById("filmReset");
+
+    const normalize = (s) => (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+    function getActiveFilmRows() {
+      const tbodyId = currentLang === "it" ? "filmTbodyIt" : "filmTbodyEn";
+      return Array.from(document.querySelectorAll(`#${tbodyId} .filmRow`));
+    }
+
+    function applyFilmFilter() {
+      const q = normalize(filmSearch.value.trim());
+      const rows = getActiveFilmRows();
+      rows.forEach(r => {
+        const txt = normalize(r.innerText);
+        const ok = q === "" || txt.includes(q);
+        r.classList.toggle("hidden", !ok);
+      });
+    }
+
+    filmSearch.addEventListener("input", applyFilmFilter);
+    resetBtn.addEventListener("click", () => { filmSearch.value = ""; applyFilmFilter(); });
+
+    // Init lingua
+    applyLang(currentLang);
+  </script>
+</body>
+</html>
